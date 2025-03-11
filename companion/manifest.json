@@ -1,0 +1,26 @@
+{
+	"id": "metus-technology-player-controller",
+	"name": "Metus Technology Player Controller",
+	"shortname": "player-controller",
+	"description": "Player controller.",
+	"version": "0.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-metus-technology-player-controller.git",
+	"bugs": "https://github.com/bitfocus/companion-module-metus-technology-player-controller/issues",
+	"maintainers": [
+		{
+			"name": "Metus Technology",
+			"email": "support@metus.com"
+		}
+	],
+	"runtime": {
+		"type": "node22",
+		"api": "nodejs-ipc",
+		"apiVersion": "0.0.0",
+		"entrypoint": "../main.js"
+	},
+	"legacyIds": [],
+	"manufacturer": "Metus Technology",
+	"products": ["Player Controller"],
+	"keywords": []
+}
