@@ -36,6 +36,11 @@ export function getVariables() {
 
 		if (player.playbackInfo) {
 			variables.push({
+				variableId: `player-${player.id}-playback-status`,
+				name: `Playback status of player ${player.name}`,
+			})
+
+			variables.push({
 				variableId: `player-${player.id}-clip-position`,
 				name: `Clip position of player ${player.name}`,
 			})
@@ -91,6 +96,7 @@ export function getVariables() {
 			})
 
 			this.setVariableValues({
+				[`player-${player.id}-playback-status`]: player.playbackInfo.playbackStatus,
 				[`player-${player.id}-clip-position`]: timeToString(player.playbackInfo.clipPosition),
 				[`player-${player.id}-clip-duration`]: timeToString(player.playbackInfo.clipDuration),
 				[`player-${player.id}-clip-remaining-time`]: timeToString(player.playbackInfo.clipRemainingTime),
