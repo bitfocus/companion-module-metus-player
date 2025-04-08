@@ -173,7 +173,7 @@ export function getPresets() {
 			category: 'Player',
 			name: `Preview ${player.name}`,
 			style: {
-				text: `$(player-controller:player-${player.id}-clip-remaining-time)`,
+				text: `$(metus-player:player-${player.id}-clip-remaining-time)`,
 				size: 14,
 				color: colorWhite,
 				bgcolor: colorBlack,

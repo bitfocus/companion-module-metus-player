@@ -1797,6 +1797,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"metus-player@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "metus-player@workspace:."
+  dependencies:
+    "@companion-module/base": "npm:~1.11.2"
+    "@companion-module/tools": "npm:^2.1.1"
+    "@microsoft/signalr": "npm:^8.0.7"
+    axios: "npm:^1.8.2"
+    jimp: "npm:^1.6.0"
+    numeral: "npm:^2.0.6"
+    prettier: "npm:^3.4.2"
+  languageName: unknown
+  linkType: soft
+
 "mime-db@npm:1.52.0":
   version: 1.52.0
   resolution: "mime-db@npm:1.52.0"
@@ -2109,20 +2123,6 @@ __metadata:
   checksum: 10c0/c56bda7769e04907a88423feb320babaed0711af8c436ce3e56763ab1021ba107c7b0cafb11cde7529f669cfc22bffcaebffb573645cbd63842ea9fb17cd7728
   languageName: node
   linkType: hard
-
-"player-controller@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "player-controller@workspace:."
-  dependencies:
-    "@companion-module/base": "npm:~1.11.2"
-    "@companion-module/tools": "npm:^2.1.1"
-    "@microsoft/signalr": "npm:^8.0.7"
-    axios: "npm:^1.8.2"
-    jimp: "npm:^1.6.0"
-    numeral: "npm:^2.0.6"
-    prettier: "npm:^3.4.2"
-  languageName: unknown
-  linkType: soft
 
 "pngjs@npm:^6.0.0":
   version: 6.0.0
