@@ -3,7 +3,7 @@
 	"name": "Metus Technology Player Controller",
 	"shortname": "metus-player",
 	"description": "Player controller.",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"license": "MIT",
 	"repository": "git+https://github.com/bitfocus/companion-module-metus-player.git",
 	"bugs": "https://github.com/bitfocus/companion-module-metus-player/issues",

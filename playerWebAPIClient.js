@@ -314,7 +314,7 @@ export function initRestClient(state, config, moduleInstance) {
 				state.isAuthenticated = true
 
 				moduleInstance.saveConfig(config)
-				moduleInstance.initAPI()
+				await moduleInstance.initAPI()
 			})
 			.catch((err) => {
 				state.isAuthenticated = false
@@ -334,7 +334,7 @@ export function initRestClient(state, config, moduleInstance) {
 			.get(config.webAPIUrl + '/users/getcurrentuserinfo')
 			.then(async (res) => {
 				moduleInstance.log('debug', 'Token is valid.')
-				moduleInstance.initAPI()
+				await moduleInstance.initAPI()
 			})
 			.catch((err) => {
 				moduleInstance.log('debug', 'Invalid token.')

@@ -5,7 +5,7 @@ export function getActions() {
 		name: 'Play All',
 		options: [],
 		callback: async (action) => {
-			this.playAllPlayers()
+			await this.playAllPlayers()
 		},
 	}
 
@@ -13,7 +13,7 @@ export function getActions() {
 		name: 'Pause All',
 		options: [],
 		callback: async (action) => {
-			this.pauseAllPlayers()
+			await this.pauseAllPlayers()
 		},
 	}
 
@@ -21,7 +21,7 @@ export function getActions() {
 		name: 'Stop All',
 		options: [],
 		callback: async (action) => {
-			this.stopAllPlayers()
+			await this.stopAllPlayers()
 		},
 	}
 
@@ -36,7 +36,7 @@ export function getActions() {
 			},
 		],
 		callback: async (action) => {
-			this.play(action.options.playerId)
+			await this.play(action.options.playerId)
 		},
 	}
 
@@ -51,7 +51,7 @@ export function getActions() {
 			},
 		],
 		callback: async (action) => {
-			this.pause(action.options.playerId)
+			await this.pause(action.options.playerId)
 		},
 	}
 
@@ -66,7 +66,7 @@ export function getActions() {
 			},
 		],
 		callback: async (action) => {
-			this.stop(action.options.playerId)
+			await this.stop(action.options.playerId)
 		},
 	}
 
@@ -81,7 +81,7 @@ export function getActions() {
 			},
 		],
 		callback: async (action) => {
-			this.goToStart(action.options.playerId)
+			await this.goToStart(action.options.playerId)
 		},
 	}
 
@@ -96,7 +96,7 @@ export function getActions() {
 			},
 		],
 		callback: async (action) => {
-			this.goToEnd(action.options.playerId)
+			await this.goToEnd(action.options.playerId)
 		},
 	}
 
@@ -111,7 +111,7 @@ export function getActions() {
 			},
 		],
 		callback: async (action) => {
-			this.nextFrame(action.options.playerId)
+			await this.nextFrame(action.options.playerId)
 		},
 	}
 
@@ -126,7 +126,7 @@ export function getActions() {
 			},
 		],
 		callback: async (action) => {
-			this.previousFrame(action.options.playerId)
+			await this.previousFrame(action.options.playerId)
 		},
 	}
 
@@ -147,7 +147,7 @@ export function getActions() {
 			},
 		],
 		callback: async (action) => {
-			this.seekBy(action.options.playerId, action.options.seconds)
+			await this.seekBy(action.options.playerId, action.options.seconds)
 		},
 	}
 
@@ -169,7 +169,7 @@ export function getActions() {
 			},
 		],
 		callback: async (action) => {
-			this.setPlaybackRate(action.options.playerId, action.options.rate)
+			await this.setPlaybackRate(action.options.playerId, action.options.rate)
 		},
 	}
 
@@ -184,7 +184,7 @@ export function getActions() {
 			},
 		],
 		callback: async (action) => {
-			this.increasePlaybackRate(action.options.playerId)
+			await this.increasePlaybackRate(action.options.playerId)
 		},
 	}
 
@@ -199,7 +199,7 @@ export function getActions() {
 			},
 		],
 		callback: async (action) => {
-			this.decreasePlaybackRate(action.options.playerId)
+			await this.decreasePlaybackRate(action.options.playerId)
 		},
 	}
 

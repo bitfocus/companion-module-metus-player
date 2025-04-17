@@ -361,33 +361,6 @@ export function getPresets() {
 			feedbacks: [],
 		}
 
-		presets[`set-playback-rate-to-1-${player.id}`] = {
-			type: 'button',
-			category: 'Player',
-			name: `Set Playback Rate to 1 ${player.name}`,
-			style: {
-				text: 'Playback\\nRate\\n1',
-				size: 14,
-				color: colorWhite,
-				bgcolor: colorBlack,
-			},
-			steps: [
-				{
-					down: [
-						{
-							actionId: 'set_playback_rate',
-							options: {
-								playerId: player.id,
-								rate: 1,
-							},
-						},
-					],
-					up: [],
-				},
-			],
-			feedbacks: [],
-		}
-
 		presets[`set-playback-rate-to-minus-1-${player.id}`] = {
 			type: 'button',
 			category: 'Player',
@@ -406,6 +379,33 @@ export function getPresets() {
 							options: {
 								playerId: player.id,
 								rate: -1,
+							},
+						},
+					],
+					up: [],
+				},
+			],
+			feedbacks: [],
+		}
+
+		presets[`set-playback-rate-to-1-${player.id}`] = {
+			type: 'button',
+			category: 'Player',
+			name: `Set Playback Rate to 1 ${player.name}`,
+			style: {
+				text: 'Playback\\nRate\\n1',
+				size: 14,
+				color: colorWhite,
+				bgcolor: colorBlack,
+			},
+			steps: [
+				{
+					down: [
+						{
+							actionId: 'set_playback_rate',
+							options: {
+								playerId: player.id,
+								rate: 1,
 							},
 						},
 					],

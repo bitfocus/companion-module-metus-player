@@ -190,62 +190,62 @@ class ModuleInstance extends InstanceBase {
 	}
 
 	async playAllPlayers() {
-		playerHub.playAllPlayers()
+		await playerHub.playAllPlayers()
 	}
 
 	async pauseAllPlayers() {
-		playerHub.pauseAllPlayers()
+		await playerHub.pauseAllPlayers()
 	}
 
 	async stopAllPlayers() {
-		playerHub.stopAllPlayers()
+		await playerHub.stopAllPlayers()
 	}
 
 	async play(id) {
-		playerHub.play(id)
+		await playerHub.play(id)
 	}
 
 	async pause(id) {
-		playerHub.pause(id)
+		await playerHub.pause(id)
 	}
 
 	async stop(id) {
-		playerHub.stop(id)
+		await playerHub.stop(id)
 	}
 
 	async getPreview(id) {
-		playerHub.getPreview(id)
+		await playerHub.getPreview(id)
 	}
 
 	async getPlaybackInfo(id) {
-		playerHub.getPlaybackInfo(id)
+		await playerHub.getPlaybackInfo(id)
 	}
 
 	async goToStart(id) {
-		playerHub.goToStart(id)
+		await playerHub.goToStart(id)
 	}
 
 	async goToEnd(id) {
-		playerHub.goToEnd(id)
+		await playerHub.goToEnd(id)
 	}
 
 	async nextFrame(id) {
-		playerHub.nextFrame(id)
+		await playerHub.nextFrame(id)
 	}
 
 	async previousFrame(id) {
-		playerHub.previousFrame(id)
+		await playerHub.previousFrame(id)
 	}
 
 	async seekBy(id, seconds) {
-		playerHub.seekBy(id, seconds)
+		await playerHub.seekBy(id, seconds)
 	}
 
 	async setPlaybackRate(id, rate) {
-		playerHub.setPlaybackRate(id, rate)
+		await playerHub.setPlaybackRate(id, rate)
 	}
 
-	increasePlaybackRate(id) {
+	async increasePlaybackRate(id) {
 		let player = this.getPlayerById(id)
 		if (!player) return
 
@@ -256,10 +256,10 @@ class ModuleInstance extends InstanceBase {
 		if (newIndex >= this.validPlaybackRates.length) return
 
 		let newRate = this.validPlaybackRates[newIndex]
-		this.setPlaybackRate(player.id, newRate)
+		await this.setPlaybackRate(player.id, newRate)
 	}
 
-	decreasePlaybackRate(id) {
+	async decreasePlaybackRate(id) {
 		let player = this.getPlayerById(id)
 		if (!player) return
 
@@ -270,7 +270,7 @@ class ModuleInstance extends InstanceBase {
 		if (newIndex < 0) return
 
 		let newRate = this.validPlaybackRates[newIndex]
-		this.setPlaybackRate(player.id, newRate)
+		await this.setPlaybackRate(player.id, newRate)
 	}
 
 	findCurrentPlaybackRateIndex(player) {
