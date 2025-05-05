@@ -58,12 +58,9 @@ class ModuleInstance extends InstanceBase {
 		this.removeAllPlaybackInfoTimers()
 		this.removeAllPreviewTimers()
 
-		setTimeout(() => {
-			this.config = config
-			this.state.token = config.token
-
-			this.init(config)
-		}, 2000)
+		this.config = config
+		this.state.token = config.token
+		await this.init(config)
 	}
 
 	getConfigFields() {
