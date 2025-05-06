@@ -1,7 +1,6 @@
 import { combineRgb } from '@companion-module/base'
-import { HorizontalAlign, Jimp, loadFont } from 'jimp'
+import { Jimp } from 'jimp'
 import { convertRGBAtoARGB, getTotalSeconds } from './utils'
-import { SANS_8_WHITE } from 'jimp/fonts'
 
 export function getFeedbacks() {
 	const feedbacks = {}
