@@ -3,7 +3,7 @@
 	"name": "Metus Technology Player Controller",
 	"shortname": "metus-player",
 	"description": "Player controller.",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"license": "MIT",
 	"repository": "git+https://github.com/bitfocus/companion-module-metus-player.git",
 	"bugs": "https://github.com/bitfocus/companion-module-metus-player/issues",
@@ -14,7 +14,7 @@
 		}
 	],
 	"runtime": {
-		"type": "node18",
+		"type": "node26",
 		"api": "nodejs-ipc",
 		"apiVersion": "0.0.0",
 		"entrypoint": "../main.js"
